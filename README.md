@@ -18,11 +18,13 @@ For this project I'm thinking of a darker theme. Could we possibly put in a ligh
 
 **COLOR**
 
-![alt text](<Work Scheduler.png>)
+
+![alt text](<Assets/img/Work Scheduler.png>)
+
+![alt text](<Assets/img/second option.png>)
 
 
 
-![alt text](<second option.png>)
 
 
 
