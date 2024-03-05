@@ -22,3 +22,13 @@ $(function () {
   //
   // TODO: Add code to display the current date in the header of the page.
 });
+
+
+
+
+// Current Date formatted with AdvancedFormat extension //
+
+dayjs.extend(dayjs_plugin_advancedFormat);
+
+var currentDayEl = dayjs().format('dddd MMMM Do,YYYY');
+$('#currentDay').text(currentDayEl);

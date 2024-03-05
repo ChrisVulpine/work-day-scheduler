@@ -2,9 +2,9 @@
 
 ## HTML
 
-- [ ] Make hour divs in HTML for each hour of a 9-5 day<br>
-- [ ] Confirm all linked APIs are present (day.js, google fonts, bootstrap, etc.)<br>
-- [ ] Confirm CSS and JS files are linked with HTML<br>
+- [X] Make hour divs in HTML for each hour of a 9-5 day<br>
+- [X] Confirm all linked APIs are present (day.js, google fonts, bootstrap, etc.)<br>
+- [X] Confirm CSS and JS files are linked with HTML<br>
 
 
 ## CSS **LAST**
@@ -44,7 +44,7 @@ block by comparing the id to the current hour.<br>
 - [ ] Add code to get any user input that was saved in localStorage and set<br>
 the values of the corresponding textarea elements.<br>
 
-- [ ] Add code to display the current date in the header of the page.<br>
+- [X] Add code to display the current date in the header of the page.<br>
 
 
 
