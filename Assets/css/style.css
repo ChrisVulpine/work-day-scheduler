@@ -1,3 +1,11 @@
+:root {
+--persian-green: #009d86ff;
+--black-olive: #212922ff;
+--french-gray: #d0ccd0ff;
+--auburn: #A93737ff;
+}
+
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
