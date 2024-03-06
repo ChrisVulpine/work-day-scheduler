@@ -34,10 +34,16 @@
 
 // ------------Currently Building: when save button clicked, log value of textarea-----------------------------------//
 
+// ISSUES //  does not save to local storage, how can I test this? Would an interrupt help? 
+
 $('#hour-9').find('button').click(function() {
   $(this).find('textarea');
   let comment = $.trim($("#potato").val());
   console.log(comment);
+
+  localStorage.setItem('comment','KEY');
+  let event = localStorage.getItem('comment');
+  console.log(event);
 });
 // -----------------------------------------------------------------//
 
