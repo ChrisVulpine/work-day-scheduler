@@ -1,27 +1,38 @@
-:root {
---persian-green: #009d86ff;
---black-olive: #212922ff;
---french-gray: #d0ccd0ff;
---auburn: #A93737ff;
+h1 {
+  font-family: Madimi One; 
+  text-align: center;
+  color: white;
+  border: solid white 4px; 
+  padding: 15px; 
+  background-color:rgb(3, 104, 75);
+  border-radius: 7px;
 }
 
+.date-time {
+  border: solid white 2px; 
+  border-radius: 20px;
+}
 
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  text-align: center;
+  background: rgb(19, 25, 25);
+  color: rgb(255, 255, 255);
 }
 
 textarea {
   background: transparent;
   border: none;
   resize: none;
-  color: #000000;
+  color: #ffffff;
   border-left: 1px solid black;
   padding: 10px;
 }
 
 .description {
-  white-space: pre-wrap;
+  white-space: pre-wrap; 
+  
 }
 
 .time-block {
@@ -33,23 +44,27 @@ textarea {
 }
 
 .hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  background-color: rgb(19, 25, 25);
+  color: #ffffff;
 }
 
 .past {
-  background-color: #d3d3d3;
-  color: white;
+  background-color: rgb(64, 67, 67);
+  color: rgb(113, 113, 111);
+}
+
+.customPastText {
+  color: rgb(110, 110, 109)
+
 }
 
 .present {
-  background-color: #ff6961;
-  color: white;
+  background-color: #0ea764;
+  color: rgb(255, 255, 255);
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: rgb(19, 25, 25);;
   color: white;
 }
 
@@ -57,11 +72,16 @@ textarea {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: #0b784e;
   color: white;
+}
+
+.saveBtn:Hover {
+  background-color: #3be6a4;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+  
 }

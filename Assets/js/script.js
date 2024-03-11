@@ -6,6 +6,8 @@ dayjs.extend(dayjs_plugin_advancedFormat);
 
 var currentDayEl = dayjs().format('dddd MMMM Do,YYYY');
 $('#currentDay').text(currentDayEl);
+var currentTimeEl = dayjs().format('h:mm A')
+$('#currentTime').text(currentTimeEl);
 
 // ------------Local Storage and Hour Text-Block Input Variables-----------------------------------//
 
@@ -19,6 +21,8 @@ var display3 = document.getElementById('hour3Text');
 var display4 = document.getElementById('hour4Text');
 var display5 = document.getElementById('hour5Text');
 var display6 = document.getElementById('hour6Text');
+
+
 
 var storedData9 = JSON.parse(localStorage.getItem('9Key'));
 var storedData10 = JSON.parse(localStorage.getItem('10Key'));
@@ -212,19 +216,31 @@ $('#hour-6').find('button').click(function() {
 
 // -----------------------Current Time Indicator and Class Manipulator------------------------------------//
 
-currentHour = dayjs().hour();
+//currentHour = dayjs().hour();
+currentHour = 11; 
 // --------------------------------9---------------------------------//
-
 let hour9 = document.getElementById("hour-9")
 
 if (currentHour == 9) {
 
+hour9.classList.remove("future")
+hour9.classList.remove("past");
 hour9.classList.add("present");
+
 }
-else(currentHour > 9)
+else if (currentHour > 9) {
+  hour9.classList.remove("present")
+  hour9.classList.remove("future")
+  hour9.classList.add("past")
+  display9.classList.add("customPastText")
 
-hour9.classList.add("past");
-
+}
+else if (currentHour < 9) {
+  hour9.classList.remove("past");
+  hour9.classList.remove("present");
+  hour9.classList.add("future");
+  
+}
 // -------------------------------10----------------------------------//
 
 let hour10 = document.getElementById("hour-10")
@@ -235,18 +251,19 @@ hour10.classList.remove("future")
 hour10.classList.remove("past");
 hour10.classList.add("present");
 
+
 }
 else if (currentHour > 10) {
 hour10.classList.remove("present")
 hour10.classList.remove("future")
 hour10.classList.add("past")
+display10.classList.add("customPastText")
 }
 else if (currentHour < 10) {
 hour10.classList.remove("past");
 hour10.classList.remove("present");
 hour10.classList.add("future");
 }
-console.log(currentHour);
 
 // --------------------------------11---------------------------------//
 
@@ -263,6 +280,7 @@ else if (currentHour > 11) {
   hour11.classList.remove("present")
   hour11.classList.remove("future")
   hour11.classList.add("past")
+  display11.classList.add("customPastText")
 }
 else if (currentHour < 11) {
   hour11.classList.remove("past");
@@ -285,6 +303,7 @@ else if (currentHour > 12) {
   hour12.classList.remove("present")
   hour12.classList.remove("future")
   hour12.classList.add("past")
+  display12.classList.add("customPastText")
 }
 else if (currentHour < 12) {
   hour12.classList.remove("past");
@@ -307,6 +326,7 @@ else if (currentHour > 13) {
   hour1.classList.remove("present")
   hour1.classList.remove("future")
   hour1.classList.add("past")
+  display1.classList.add("customPastText")
 }
 else if (currentHour < 13) {
   hour1.classList.remove("past");
@@ -329,6 +349,7 @@ else if (currentHour > 14) {
   hour2.classList.remove("present")
   hour2.classList.remove("future")
   hour2.classList.add("past")
+  display2.classList.add("customPastText")
 }
 else if (currentHour < 14) {
   hour2.classList.remove("past");
@@ -351,6 +372,7 @@ else if (currentHour > 15) {
   hour3.classList.remove("present")
   hour3.classList.remove("future")
   hour3.classList.add("past")
+  display3.classList.add("customPastText")
 }
 else if (currentHour < 15) {
   hour3.classList.remove("past");
@@ -373,6 +395,7 @@ else if (currentHour > 16) {
   hour4.classList.remove("present")
   hour4.classList.remove("future")
   hour4.classList.add("past")
+  display4.classList.add("customPastText")
 }
 else if (currentHour < 16) {
   hour4.classList.remove("past");
@@ -395,6 +418,7 @@ else if (currentHour > 17) {
   hour5.classList.remove("present")
   hour5.classList.remove("future")
   hour5.classList.add("past")
+  display5.classList.add("customPastText")
 }
 else if (currentHour < 17) {
   hour5.classList.remove("past");
@@ -417,6 +441,7 @@ else if (currentHour > 18) {
   hour6.classList.remove("present")
   hour6.classList.remove("future")
   hour6.classList.add("past")
+  display6.classList.add("customPastText")
 }
 else if (currentHour < 18) {
   hour6.classList.remove("past");
