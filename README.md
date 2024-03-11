@@ -24,7 +24,10 @@ This application is meant to be used in the browser here: https://chrisvulpine.g
 The user simply needs to click on the time block to add an event. After clicking the save button, the event will be saved to local storage. This allows the user to navigate away from the page, but still maintain the entered events. The calendar dynamically updates showing past time blocks, the present, and future time blocks. Each one has a unique color to help with identification and organization. 
 
    
-   ![gif of calendar app being used](Assets/img/05-third-party-apis-homework-demo.gif)
+   ![gif of calendar app being used](Assets/img/demo-recording.gif)
+
+   ![alt text](Assets/img/Screenshot.png)
+
 
 
 ## Credits
