@@ -2,7 +2,7 @@
 
 ## Description
 
-I created a calendar application that allows a user schedule events from the hours of 9:00am-6:00pm. The events are saved in local storage once the save button is clicked and recalled once the page is loaded. The current date is also displayed at the top of the page.<br>
+I created a calendar application that allows a user to schedule events from the hours of 9:00am-6:00pm. The events are saved in local storage once the save button is clicked and recalled once the page is loaded. The current date and time are also displayed at the top of the page.<br>
 
  I wanted to practice with third party APIs, and this project allowed me to work with dayjs. It also allowed me to practice more JavaScript.<br>
 
