@@ -23,7 +23,16 @@ var display4 = document.getElementById('hour4Text');
 var display5 = document.getElementById('hour5Text');
 var display6 = document.getElementById('hour6Text');
 
-var saveButton = document.getElementById('saveButton');
+var saveButton9 = document.getElementById('clicksave9');
+var saveButton10 = document.getElementById('clicksave10');
+var saveButton11 = document.getElementById('clicksave11');
+var saveButton12 = document.getElementById('clicksave12');
+var saveButton1 = document.getElementById('clicksave1');
+var saveButton2 = document.getElementById('clicksave2');
+var saveButton3 = document.getElementById('clicksave3');
+var saveButton4 = document.getElementById('clicksave4');
+var saveButton5 = document.getElementById('clicksave5');
+var saveButton6 = document.getElementById('clicksave6');
 
 
 
@@ -50,14 +59,11 @@ else {
 }
 
 $('#hour-9').find('button').click(function() {
-  var saveButtonEl = document.getElementById('saveButton');
-  var originalContent = saveButtonEl.innerHTML;
-
-  // Change the content to "Saved!" (or any other content you want)
-  saveButtonEl.innerHTML = "Saved!";
+  saveButton9.removeAttribute('class', 'saved');
   setTimeout(function() {
-    saveButtonEl.textContent = originalContent;
-  }, 500);
+    saveButton9.setAttribute('class', 'saved');
+  }, 1500);
+
   $(this).find('textarea');
   let comment = $.trim($("#hour9Text").val());
   
@@ -76,6 +82,11 @@ else {
 }
 
 $('#hour-10').find('button').click(function() {
+  saveButton10.removeAttribute('class', 'saved');
+  setTimeout(function() {
+    saveButton10.setAttribute('class', 'saved');
+  }, 1500);
+
   $(this).find('textarea');
   let comment = $.trim($("#hour10Text").val());
   
@@ -94,6 +105,11 @@ else {
 }
 
 $('#hour-11').find('button').click(function() {
+  saveButton11.removeAttribute('class', 'saved');
+  setTimeout(function() {
+    saveButton11.setAttribute('class', 'saved');
+  }, 1500);
+
   $(this).find('textarea');
   let comment = $.trim($("#hour11Text").val());
   
@@ -110,6 +126,11 @@ else {
 }
 
 $('#hour-12').find('button').click(function() {
+  saveButton12.removeAttribute('class', 'saved');
+  setTimeout(function() {
+    saveButton12.setAttribute('class', 'saved');
+  }, 1500);
+
   $(this).find('textarea');
   let comment = $.trim($("#hour12Text").val());
   
@@ -128,6 +149,11 @@ else {
 }
 
 $('#hour-1').find('button').click(function() {
+  saveButton1.removeAttribute('class', 'saved');
+  setTimeout(function() {
+    saveButton1.setAttribute('class', 'saved');
+  }, 1500);
+
   $(this).find('textarea');
   let comment = $.trim($("#hour1Text").val());
   
@@ -146,6 +172,11 @@ else {
 }
 
 $('#hour-2').find('button').click(function() {
+  saveButton2.removeAttribute('class', 'saved');
+  setTimeout(function() {
+    saveButton2.setAttribute('class', 'saved');
+  }, 1500);
+
   $(this).find('textarea');
   let comment = $.trim($("#hour2Text").val());
   
@@ -164,6 +195,11 @@ else {
 }
 
 $('#hour-3').find('button').click(function() {
+  saveButton3.removeAttribute('class', 'saved');
+  setTimeout(function() {
+    saveButton3.setAttribute('class', 'saved');
+  }, 1500);
+
   $(this).find('textarea');
   let comment = $.trim($("#hour3Text").val());
   
@@ -182,6 +218,11 @@ else {
 }
 
 $('#hour-4').find('button').click(function() {
+  saveButton4.removeAttribute('class', 'saved');
+  setTimeout(function() {
+    saveButton4.setAttribute('class', 'saved');
+  }, 1500);
+
   $(this).find('textarea');
   let comment = $.trim($("#hour4Text").val());
   
@@ -200,6 +241,11 @@ else {
 }
 
 $('#hour-5').find('button').click(function() {
+  saveButton5.removeAttribute('class', 'saved');
+  setTimeout(function() {
+    saveButton5.setAttribute('class', 'saved');
+  }, 1500);
+
   $(this).find('textarea');
   let comment = $.trim($("#hour5Text").val());
   
@@ -218,6 +264,11 @@ else {
 }
 
 $('#hour-6').find('button').click(function() {
+  saveButton6.removeAttribute('class', 'saved');
+  setTimeout(function() {
+    saveButton6.setAttribute('class', 'saved');
+  }, 1500);
+
   $(this).find('textarea');
   let comment = $.trim($("#hour6Text").val());
   

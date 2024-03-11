@@ -4,9 +4,13 @@ h1 {
   text-align: center;
   color: white;
   border: solid white 4px; 
-  padding: 15px; 
+  padding: 10px; 
   background-color:rgb(3, 104, 75);
   border-radius: 7px;
+}
+
+p {
+  margin:0;
 }
 
 .header-Text {
@@ -106,7 +110,7 @@ textarea {
 }
 
 .saveBtn:Hover {
-  background-color: #3be6a4;
+  background-color: #13c07d;;
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
@@ -114,4 +118,9 @@ textarea {
 .saveBtn:active {
   background-color: yellow; 
   transition: all .02s ease-in-out;
+}
+
+.saved {
+  display: none;
+  margin:0;
 }
