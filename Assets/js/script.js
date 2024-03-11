@@ -216,8 +216,8 @@ $('#hour-6').find('button').click(function() {
 
 // -----------------------Current Time Indicator and Class Manipulator------------------------------------//
 
-//currentHour = dayjs().hour();
-currentHour = 11; 
+currentHour = dayjs().hour();
+// currentHour = 11; 
 // --------------------------------9---------------------------------//
 let hour9 = document.getElementById("hour-9")
 

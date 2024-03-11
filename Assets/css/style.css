@@ -1,5 +1,7 @@
 h1 {
-  font-family: Madimi One; 
+  /* font-family: Madimi One;  */
+  font-family: Kode Mono;
+  font-weight: bold;
   text-align: center;
   color: white;
   border: solid white 4px; 
@@ -8,9 +10,31 @@ h1 {
   border-radius: 7px;
 }
 
-.date-time {
+.header-Text {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  padding: 10px; 
+
+}
+
+.dateTimeContainer {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
   border: solid white 2px; 
   border-radius: 20px;
+
+}
+
+.date-time {
+  font-family: Kode Mono;
+  padding: 15px; 
+  margin: 5px; 
+  text-align: center;
 }
 
 body {
@@ -46,6 +70,7 @@ textarea {
 .hour {
   background-color: rgb(19, 25, 25);
   color: #ffffff;
+  font-family: Kode Mono;
 }
 
 .past {
@@ -59,7 +84,7 @@ textarea {
 }
 
 .present {
-  background-color: #0ea764;
+  background-color: #079874;
   color: rgb(255, 255, 255);
 }
 
