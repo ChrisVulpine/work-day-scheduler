@@ -34,14 +34,14 @@ For this project I'm thinking of a darker theme. Could we possibly put in a ligh
 - [X]  Wrap all code that interacts with the DOM in a call to jQuery to ensure that the code isn't run <br>
 until the browser has finished rendering all the elements in the html.<br>
 
-- [ ] Add a listener for click events on the save button. This code should<br>
+- [X] Add a listener for click events on the save button. This code should<br>
 use the id in the containing time-block as a key to save the user input in<br>
 local storage.<br>
 
-- [ ] Add code to apply the past, present, or future class to each time<br>
+- [X] Add code to apply the past, present, or future class to each time<br>
 block by comparing the id to the current hour.<br>
 
-- [ ] Add code to get any user input that was saved in localStorage and set<br>
+- [X] Add code to get any user input that was saved in localStorage and set<br>
 the values of the corresponding textarea elements.<br>
 
 - [X] Add code to display the current date in the header of the page.<br>
