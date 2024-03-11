@@ -1,5 +1,4 @@
 h1 {
-  /* font-family: Madimi One;  */
   font-family: Kode Mono;
   font-weight: bold;
   text-align: center;
@@ -16,7 +15,6 @@ h1 {
   justify-content: center;
   align-items: center;
   padding: 10px; 
-
 }
 
 .dateTimeContainer {
@@ -25,9 +23,15 @@ h1 {
   align-content: center;
   justify-content: center;
   align-items: center;
-  border: solid white 2px; 
-  border-radius: 20px;
+  margin: 15px; 
+}
 
+#currentDay {
+  padding: 5px; 
+}
+
+#currentTime {
+  padding: 5px; 
 }
 
 .date-time {
@@ -103,10 +107,11 @@ textarea {
 
 .saveBtn:Hover {
   background-color: #3be6a4;
-}
-
-.saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
-  
+}
+
+.saveBtn:active {
+  background-color: yellow; 
+  transition: all .02s ease-in-out;
 }

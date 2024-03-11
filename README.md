@@ -39,6 +39,11 @@ The user simply needs to click on the time block to add an event. After clicking
 
 * Three branch if statement: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
 
+* Adding a favicon: https://www.w3schools.com/html/html_favicon.asp 
+
+* Button on Click CSS: https://www.geeksforgeeks.org/how-to-add-onclick-effect-using-css/
+
+
 ## License
 
 N/A

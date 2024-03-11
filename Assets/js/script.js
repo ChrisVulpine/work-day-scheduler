@@ -5,6 +5,7 @@ $(document).ready(function () {
 dayjs.extend(dayjs_plugin_advancedFormat);
 
 var currentDayEl = dayjs().format('dddd MMMM Do,YYYY');
+
 $('#currentDay').text(currentDayEl);
 var currentTimeEl = dayjs().format('h:mm A')
 $('#currentTime').text(currentTimeEl);
@@ -21,6 +22,8 @@ var display3 = document.getElementById('hour3Text');
 var display4 = document.getElementById('hour4Text');
 var display5 = document.getElementById('hour5Text');
 var display6 = document.getElementById('hour6Text');
+
+var saveButton = document.getElementById('saveButton');
 
 
 
@@ -47,6 +50,14 @@ else {
 }
 
 $('#hour-9').find('button').click(function() {
+  var saveButtonEl = document.getElementById('saveButton');
+  var originalContent = saveButtonEl.innerHTML;
+
+  // Change the content to "Saved!" (or any other content you want)
+  saveButtonEl.innerHTML = "Saved!";
+  setTimeout(function() {
+    saveButtonEl.textContent = originalContent;
+  }, 500);
   $(this).find('textarea');
   let comment = $.trim($("#hour9Text").val());
   
@@ -72,7 +83,7 @@ $('#hour-10').find('button').click(function() {
 
 });
 
-// --------------------------------11---------------------------------//
+// ----------------------------11-------------------------------------//
 
 if (storedData11) {
   display11.innerHTML = storedData11; 
@@ -217,8 +228,9 @@ $('#hour-6').find('button').click(function() {
 // -----------------------Current Time Indicator and Class Manipulator------------------------------------//
 
 currentHour = dayjs().hour();
-// currentHour = 11; 
+
 // --------------------------------9---------------------------------//
+
 let hour9 = document.getElementById("hour-9")
 
 if (currentHour == 9) {
