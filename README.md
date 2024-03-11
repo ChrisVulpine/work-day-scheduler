@@ -17,7 +17,7 @@ This project will help anyone structure their day for maximum results! Try it ou
 
 ## Installation
 
-This application is meant to be used in the browser here:
+This application is meant to be used in the browser here: https://chrisvulpine.github.io/work-day-scheduler/
 
 ## Usage
 
