@@ -1,86 +1,49 @@
-# My To Dos
+# Work Day Scheduler 
 
-## HTML
+## Description
 
-- [X] Make hour divs in HTML for each hour of a 9-5 day<br>
-- [X] Confirm all linked APIs are present (day.js, google fonts, bootstrap, etc.)<br>
-- [X] Confirm CSS and JS files are linked with HTML<br>
+I created a calendar application that allows a user schedule events from the hours of 9:00am-6:00pm. The events are saved in local storage once the save button is clicked and recalled once the page is loaded. The current date is also displayed at the top of the page.<br>
 
+ I wanted to practice with third party APIs, and this project allowed me to work with dayjs. It also allowed me to practice more JavaScript.<br>
 
-## CSS **LAST**
+This project will help anyone structure their day for maximum results! Try it out!
 
-- [ ] Style elements in page after all other items are completed.
+## Table of Contents
 
-**Notes:**
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
 
-For this project I'm thinking of a darker theme. Could we possibly put in a light and dark mode slider? 
+## Installation
 
+This application is meant to be used in the browser here:
 
-**COLOR**
+## Usage
 
+The user simply needs to click on the time block to add an event. After clicking the save button, the event will be saved to local storage. This allows the user to navigate away from the page, but still maintain the entered events. The calendar dynamically updates showing past time blocks, the present, and future time blocks. Each one has a unique color to help with identification and organization. 
 
-![alt text](<Assets/img/Work Scheduler.png>)
-
-![alt text](<Assets/img/second option.png>)
-
-
-
-
-
+   
+   ![gif of calendar app being used](Assets/img/05-third-party-apis-homework-demo.gif)
 
 
-## JS
+## Credits
 
-- [X]  Wrap all code that interacts with the DOM in a call to jQuery to ensure that the code isn't run <br>
-until the browser has finished rendering all the elements in the html.<br>
+* For specifying an element inside an id: https://api.jquery.com/find/
 
-- [X] Add a listener for click events on the save button. This code should<br>
-use the id in the containing time-block as a key to save the user input in<br>
-local storage.<br>
+* General Reference: https://www.w3schools.com/js/js_htmldom_eventlistener.asp
 
-- [X] Add code to apply the past, present, or future class to each time<br>
-block by comparing the id to the current hour.<br>
+* Getting a value from a textarea in JQuery: https://www.w3docs.com/snippets/javascript/how-to-get-the-value-of-a-textarea-using-jquery.html#:~:text=To%20detect%20the%20value%20of,server%20when%20it%20is%20clicked
 
-- [X] Add code to get any user input that was saved in localStorage and set<br>
-the values of the corresponding textarea elements.<br>
+* JavaScript and Local Storage: https://blog.logrocket.com/localstorage-javascript-complete-guide/#:~:text=The%20setItem()%20method%20allows,the%20value%20attached%20to%20it
 
-- [X] Add code to display the current date in the header of the page.<br>
+* Three branch if statement: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
 
+## License
 
+N/A
 
+---
+## Badges
 
-
-
-## Work Day Scheduler Starter Code
-
-Create a simple calendar application that allows a user to save events for each hour of a typical working day (9am–5pm). This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
-
-The starter code uses the Day.js (https://day.js.org/) to an external site. library to work with date and time, but feel free to use a different JavaScript solution to handle this functionality.
-
-
-## User Story
-
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-
-
-## Acceptance Criteria
-
-GIVEN I am using a daily planner to create a schedule <br>
-WHEN I open the planner <br>
-THEN the current day is displayed at the top of the calendar<br>
-WHEN I scroll down<br>
-THEN I am presented with time blocks for standard business hours of 9am to 5pm<br>
-WHEN I view the time blocks for that day<br>
-THEN each time block is color-coded to indicate whether it is in the past, present, or future<br>
-WHEN I click into a time block<br>
-THEN I can enter an event<br>
-WHEN I click the save button for that time block<br>
-THEN the text for that event is saved in local storage<br>
-WHEN I refresh the page<br>
-THEN the saved events persist<br>
-
-![alt text](Assets/img/05-third-party-apis-homework-demo.gif)
-
-
+![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
